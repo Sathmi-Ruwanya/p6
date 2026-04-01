@@ -2,6 +2,9 @@
 
 This repository contains a front-end insurance management project with HTML, CSS, and JavaScript.
 
+##video clip -
+- https://youtu.be/00qwtKWsQkw
+
 ## Overview
 
 - `css/`: Stylesheets for admin, customer, insurance manager, and other pages.
