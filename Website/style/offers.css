@@ -1,0 +1,434 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+  
+.header {
+    padding: 65px;
+    text-align: center;
+    background:#9557B9;
+    color: rgb(248, 248, 248);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+	top:-20px;
+	height:130px;
+  }
+  
+
+  .header h1 {
+    font-size: 30px;
+    word-spacing: 15px ;
+    letter-spacing: 3px ;
+    text-align: center;
+    padding: 30px;
+    position:absolute;
+    width: 80%;
+    top: 5px;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+  
+  .header img.logo {
+    border-radius: 8px;
+    position: absolute;
+    top: 35px; 
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #0a0c08;
+    padding: 1px; 
+
+  }
+  
+  .header img.user{
+      border-radius: 8px;
+      position: absolute;
+     top: 45px;
+    right:35px;
+    width: 50px;
+      height: 50px;
+      object-fit: cover;
+  }
+  
+  .login-button {
+      background-color: #369a17; /* Background color of the button */
+      color: #fff; /* Text color */
+      padding: 5px 5px; /* Padding around the button text */
+      font-size: 9px; /* Font size */
+      border: none; /* Remove button border */
+      border-radius: 3px; /* Rounded corners */
+      cursor: pointer; /* Show pointer cursor on hover */
+      transition: background-color 0.3s ease; /* Smooth transition for background color change */
+      position: absolute;
+      top: 95px; 
+    right: 65px;
+    width: 50px; 
+  height: 30px;
+  margin-right: 2px;
+    }
+  
+  
+  #signup-button{
+    background-color: #3ea6aa; /* Background color of the button */
+    color: #fff; /* Text color */
+    padding: 5px 5px; /* Padding around the button text */
+    font-size: 9px; /* Font size */
+    border: none; /* Remove button border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    position: absolute;
+      top: 95px; 
+    right: 15px;
+    width: 50px; 
+  height: 30px;
+  
+  }
+  
+
+  .login-button:hover  ,  #signup-button:hover {
+    background-color:#165a3e; /* Darker background color on hover */
+  }
+
+ /*----------------------------------------------------navigation-------------------------------------*/
+
+  #nav1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;;
+    overflow: hidden;
+    background-color:#351D45;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+	height: 35px;
+	top: 110px; 
+	
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  
+}
+
+li a , .dropbtn {
+  font-size: 13px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+   width:220px;
+}
+
+
+li a:hover {
+  background-color: #111;
+  width:220px;
+}
+ 
+
+  .dropdown-content {
+	margin:3px;
+    display: none;
+    position: fixed;
+    background-color: #f2f2f2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #140152;
+    z-index: 1000;
+	
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover
+   {background-color:#9557B9;
+    color:#fff5f5;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  nav input[type="text"] {
+    padding: 5px;
+    width: 220px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    
+  }
+ 
+
+
+  
+#ard{
+  transform: translateX(-50%);
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+}
+
+#ard:hover{
+    transform: translateX(-50%) rotate(180deg);
+}
+
+
+  
+  
+  body {
+           
+            margin: 0;
+            padding: 0;
+            background: url('image/offers.jpeg') no-repeat center center fixed; /* Replace 'your-image-url.jpg' with the URL of your image */
+            background-size: cover;
+            position: relative;
+        }
+
+        .bg {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Purple background for the offers */
+        .light-purple-bg {
+            position: absolute;
+            top: 0;
+            right: 50%;
+            width: 50%; /* Adjust width to match the width of the purple part on the other side */
+            height: 100%;
+            background-color:  rgba(0,0,0,0.40);
+            z-index: 0;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Light purple background for the other part */
+        .purple-bg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 50%; /* Adjust width to match the width of the purple part on the other side */
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);/* Light purple color */
+            z-index: 0;
+        }
+
+
+        /* Whiten only the offers above the purple part */
+        .offer-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-radius: 5px;
+            animation: slideIn 1s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .offer {
+            flex: 1;
+            padding: 20px;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            background-color: white;
+            height: 350px;
+        }
+
+        .offer:hover {
+            transform: translateY(-10px);
+            border-color: #000000;
+            box-shadow: 0 0 40px rgb(182, 143, 198);
+            
+          
+        }
+
+        .offer h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #500b95;
+        }
+
+        .offer p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .register-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #8304f3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .register-button:hover {
+            background-color: #621878;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+
+
+
+
+        .cal {
+          width: 500px;
+          padding: 20px;
+          
+          margin: 10px;
+          margin-left: 35%;
+          background-color: rgba(255, 255, 255, 0.4); /* transparent background */
+          border-radius: 15px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* frame shadow */
+          justify-content: center;
+    
+      }
+      
+     
+      
+       label {
+          font-weight: bold;
+          display: block;
+      }
+      
+      select, input[type="number"], .btn {
+          width: calc(100% - 40px);
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      
+      .btn{
+          width: 91%;
+          
+          background-color: #470460;
+          color: white;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+      
+      .btn:hover {
+          background-color: #7a118f;
+      }
+      
+      .output {
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          margin-top: 20px;
+          
+      }
+      
+      @keyframes fadeInOut {
+          0% {
+              opacity: 0;
+          }
+          50% {
+              opacity: 1;
+          }
+          100% {
+              opacity: 0;
+          }
+      }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+footer {
+    background-color: #9557B9;
+    color: #fff;
+    padding: 20px 0;
+    height:210px;
+  }
+    
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footerlogo img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #0a0c08;
+    padding: 2px;  
+  }
+  
+  .mid1-section  .mid2-section {
+    display: flex;
+    align-items: center;
+    top:1px;
+  }
+  
+  .social-media a {
+    color: #070303;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  .social-media img{
+    width: 100px;
+     height: 45px;
+  }
+
+ 
