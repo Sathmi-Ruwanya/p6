@@ -49,6 +49,3 @@ This repository contains a front-end insurance management project with HTML, CSS
    git push -u origin main
    ```
 
----
-
-Feel free to update this README with project details, screenshots, or deployment instructions.
